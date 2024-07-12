@@ -1,0 +1,397 @@
+@font-face {
+  font-family: "Aeroport400";
+  src: url(../fonts/Aeroport.ttf);
+}
+
+@font-face {
+  font-family: "Aeroport500";
+  src: url(../fonts/Aeroport-Medium.ttf);
+}
+
+@font-face {
+  font-family: "AeroportBold";
+  src: url(../fonts/Aeroport-Bold.ttf);
+}
+
+@font-face {
+  font-family: "AeroportLight";
+  src: url(../fonts/Aeroport-Light.ttf);
+}
+
+:root {
+  --width: 1538px;
+}
+
+.footer {
+  max-width: var(--width);
+  width: calc(100% - 200px);
+  margin: 150px auto 70px auto;
+  background: #e3effd 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  padding: 0 100px 60px 100px;
+}
+
+.footer .footer__first {
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer__first .footer__img {
+  width: 303px;
+  height: 52px;
+}
+
+.footer .footer__first div {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .footer__first a {
+  font: normal normal bold 24px/32px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-right: 77px;
+}
+
+.footer .footer__first .footer__link {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.footer .footer__first .footer__link a {
+  width: 40px;
+  height: 40px;
+  background: #d8e9ff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  fill: #3881e0;
+  margin: 0;
+}
+
+.footer .footer__first .footer__link a:hover {
+  background: transparent linear-gradient(88deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  transition: 0.3s all;
+}
+
+.footer .footer__first .footer__link a:hover svg g path {
+  fill: #fff;
+  transition: 0.3s all;
+}
+
+.footer .footer__second {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer__second .btn-left {
+  display: flex;
+  gap: 50px;
+}
+
+.footer .footer__second .btn-left a {
+  width: 126px;
+  height: 40px;
+  background: #e3effd 0% 0% no-repeat padding-box;
+  border: 2px solid #3881e0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal normal normal 18px/25px Aeroport500;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.footer .footer__second .btn-right {
+  display: flex;
+  gap: 50px;
+  padding-right: 20px;
+}
+
+.footer .footer__second .btn-right a {
+  padding: 7px 20px 8px 20px;
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border: 2px solid #3881e0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal normal normal 18px/25px Aeroport500;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.footer .footer__second a:hover {
+  background: transparent linear-gradient(90deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 8px;
+  color: #eef6ff;
+  transition: 0.3s all;
+}
+
+.footer hr {
+  border: 1px solid #252525;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 0;
+}
+
+.footer .footer__third {
+  display: flex;
+}
+
+.footer .footer__third h2,
+.footer .footer__third a,
+.footer .footer__third h3 {
+  font: normal normal normal 18px/24px Aeroport500;
+  letter-spacing: 0px;
+  color: #252525;
+}
+
+.footer .footer__third h2 {
+  margin-right: 173px;
+}
+
+.footer .footer__third a {
+  text-decoration: underline;
+  margin-right: 70px;
+}
+
+.footer .footer__third h3 {
+  margin-left: 102px;
+}
+
+.footer .footer__third h3 a {
+  margin: 0;
+}
+
+.footer-mobile {
+  width: 79.2%;
+  text-align: center;
+  background: var(--unnamed-color-eef6ff) 0% 0% no-repeat padding-box;
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  align-items: center;
+  flex-direction: column;
+  margin: 60px auto;
+  padding: 60px 0;
+  padding-bottom: 50px;
+  display: none;
+}
+
+.footer-mobile .footer__logo img {
+  width: 303px;
+  height: 52px;
+}
+
+.footer-mobile .footer__link {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 56px;
+}
+
+.footer-mobile .footer__link a {
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border: 2px solid #3881e0;
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  font: normal normal normal 16px/22px Aeroport500;
+  letter-spacing: 0px;
+  color: #3881e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-mobile .footer__link a:hover,
+.footer-mobile .footer__profile a:hover {
+  background: transparent linear-gradient(88deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  transition: 0.3s all;
+  color: #fff;
+}
+
+.footer-mobile .footer__profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+  margin-bottom: 66px;
+}
+
+.footer-mobile .footer__profile a {
+  padding: 9px 29px;
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border: 2px solid #3881e0;
+  border-radius: 8px;
+  font: normal normal normal 16px/22px Aeroport500;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.footer-mobile .footer__contact .contact {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+
+.footer-mobile .footer__contact .contact a {
+  font: normal normal bold 22px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-bottom: 33px;
+}
+
+.footer-mobile .footer__contact .social {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 65px;
+}
+
+.footer-mobile .footer__contact .social a {
+  width: 40px;
+  height: 40px;
+  background: #d8e9ff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  fill: #3881e0;
+  margin: 0;
+}
+
+.footer-mobile .footer__contact .social a:hover {
+  background: transparent linear-gradient(88deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  transition: 0.3s all;
+}
+
+.footer-mobile .footer__contact .social a:hover svg g path {
+  fill: #fff;
+  transition: 0.3s all;
+}
+
+.footer-mobile .footer__link--comment h4 {
+  font: normal normal normal 16px/65px Aeroport500;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-bottom: 44px;
+}
+
+.footer-mobile .footer__link--comment a {
+  text-decoration: underline;
+  font: normal normal normal 16px/24px Aeroport500;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-mobile .footer__link--comment h5 {
+  margin-top: 24px;
+  font: normal normal normal 16px/65px Aeroport500;
+  letter-spacing: 0px;
+  color: #252525;
+}
+
+.footer-mobile .footer__link--comment h5 a {
+  text-decoration: underline;
+  margin: 0;
+  display: inline;
+}
+
+@media (max-width: 1440px) {
+  .footer {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 672px) {
+  .footer-mobile {
+    width: calc(91.7% - 48px);
+    height: auto;
+    padding: 40px 24px;
+  }
+
+  .footer-mobile .footer__logo, .footer-mobile .footer__logo img {
+    width: 218px;
+    height: 38px;
+  }
+
+  .footer-mobile .footer__link {
+    margin-top: 35px;
+    flex-direction: column;
+    gap: 15px;
+    display: flex;
+  }
+
+  .footer-mobile .footer__link a {
+    width: 188px;
+    height: 40px;
+  }
+
+  .footer-mobile .footer__profile {
+    gap: 15px;
+    margin-top: 15px;
+    margin-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-mobile .footer__profile a {
+    width: 188px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-mobile .footer__contact .contact {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 42px;
+  }
+
+  .footer-mobile .footer__contact .contact a {
+    margin: 0;
+  }
+
+  .footer-mobile .footer__contact .social {
+    margin-bottom: 57px;
+  }
+
+  .footer-mobile .footer__link--comment h4 {
+    font: normal normal normal 16px/65px Aeroport500;
+    margin: 0;
+  }
+
+  .footer-mobile .footer__link--comment a {
+    font: normal normal normal 16px/22px Aeroport500;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .footer-mobile .footer__link--comment h5 {
+    font: normal normal normal 16px/22px Aeroport500;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer-mobile {
+    width: calc(91.7% - 26px);
+    padding: 40px 13px;
+  }
+}

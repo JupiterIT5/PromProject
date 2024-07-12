@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Aeroport400";
+  src: url(../fonts/Aeroport.ttf);
+}
+
+@font-face {
+  font-family: "Aeroport500";
+  src: url(../fonts/Aeroport-Medium.ttf);
+}
+
+@font-face {
+  font-family: "AeroportBold";
+  src: url(../fonts/Aeroport-Bold.ttf);
+}
+
+@font-face {
+  font-family: "AeroportLight";
+  src: url(../fonts/Aeroport-Light.ttf);
+}
+
+.section__contact {
+  max-width: var(--width);
+  width: 79.2%;
+  height: 553px;
+  background: #e3effd 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__search--text {
+  width: 50%;
+  padding: 92px 0 0 80px;
+}
+
+.section__contact .title {
+  font: normal normal normal 56px/71px Aeroport500;
+  letter-spacing: 0px;
+  color: #252525;
+  height: 76px;
+}
+
+.section__info {
+  max-width: var(--width);
+  width: 79.2%;
+  display: grid;
+  gap: 30px;
+  margin: 80px auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.section__info .section__info--card {
+  width: calc(100% - 60px);
+  height: auto;
+  background: #e3effd 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  padding: 0 30px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.section__info .section__info--card .card__img {
+  margin-top: 40px;
+  width: 83px;
+  height: 84px;
+  background: transparent linear-gradient(220deg, #00aaff 0%, #3271fe 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__info .section__info--card h2 {
+  text-align: left;
+  font: normal normal bold 26px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-bottom: 11px;
+}
+
+.section__info .section__info--card p {
+  font: normal normal normal 20px/28px Aeroport400;
+  letter-spacing: 0px;
+  color: #252525;
+}
+
+.section__info .section__info--card:hover {
+  background: transparent linear-gradient(42deg, #3271fe 0%, #00aaff 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 0px 16px 33px #2482ff9c;
+  transition: .3s all;
+}
+
+.section__info .section__info--card:hover .card__img {
+  background: #e9f4ff 0% 0% no-repeat padding-box;
+  transition: .3s all;
+}
+
+.section__info .section__info--card:hover .card__img svg g path {
+  fill: #1e88fe;
+  transition: .3s all;
+}
+
+.section__info .section__info--card:hover h2,
+.section__info .section__info--card:hover p {
+  color: #fff;
+  transition: .3s all;
+}
+
+@media (max-width: 1580px) {
+  .section__info .section__info--card .card__img, .section__info .section__info--card .card__img svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .section__info .section__info--card h2 {
+    font: normal normal bold 20px/24px AeroportBold;
+  }
+
+  .section__info .section__info--card p {
+    font: normal normal normal 16px/22px Aeroport400;
+  }
+}
+
+@media (max-width: 1350px) {
+  .section__info {
+    grid-template-columns: 1fr 1fr;
+    width: 79.3%;
+  }
+}
+
+@media (max-width: 800px) {
+  .section__info {
+    margin: 80px 0;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 690px) {
+  .section__info {
+    grid-template-columns: 1fr;
+    margin: 30px auto;
+    width: 91.7%;
+  }
+  
+  .section__info .section__info--card h2 {
+    font: normal normal bold 20px/24px AeroportBold;
+  }
+
+  .section__info .section__info--card p {
+    font: normal normal normal 16px/22px Aeroport400;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .section__info .section__info--card {
+    padding: 0 13px;
+    width: calc(100% - 26px);
+  }
+}
+
+@media (max-width: 1750px) {
+  .section__contact {
+    padding: 19px 23px;
+    width: calc(79.3% - 46px);
+  }
+
+  .section__contact .section__search--text {
+    text-align: left;
+    padding: 0;
+    width: 100%;
+  }
+  .section__contact .title {
+    font: normal normal normal 38px/42px Aeroport500;
+    letter-spacing: 0px;
+    color: #252525;
+    margin-bottom: 15px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 690px) {
+  .section__contact {
+    width: calc(91.7% - 46px);
+    padding: 0 23px;
+    padding-top: 23px;
+  }
+
+  .section__contact .section__search--text .title {
+    font: normal normal normal 28px/30px Aeroport500;
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 350px) {
+  .section__contact {
+    padding: 0 13px;
+    width: calc(91.7% - 26px);
+    padding-top: 13px;
+  }
+}

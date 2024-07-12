@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Aeroport400";
+  src: url(../fonts/Aeroport.ttf);
+}
+
+@font-face {
+  font-family: "Aeroport500";
+  src: url(../fonts/Aeroport-Medium.ttf);
+}
+
+@font-face {
+  font-family: "AeroportBold";
+  src: url(../fonts/Aeroport-Bold.ttf);
+}
+
+@font-face {
+  font-family: "AeroportLight";
+  src: url(../fonts/Aeroport-Light.ttf);
+}
+
+.section__reset {
+  margin: 70px auto;
+  width: 301px;
+  height: 281px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  padding: 27px 29px 54px 29px;
+  text-align: center;
+}
+
+.section__reset h2 {
+  font: normal normal bold 26px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-bottom: 19px;
+}
+
+.section__reset p {
+  font: normal normal normal 18px/26px Aeroport400;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-bottom: 27px;
+}
+
+.section__reset form input {
+  width: calc(100% - 19px);
+  height: 51px;
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding-left: 19px;
+  font-size: 18px;
+  color: #3881e0;
+}
+
+.section__reset form input::placeholder {
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.section__reset form .submit {
+  width: 100%;
+  height: 51px;
+  background: transparent linear-gradient(90deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 8px;
+  color: #fff;
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  border: none;
+}
+
+.section__reset form .submit:hover {
+  background: transparent linear-gradient(90deg, #FF4848 0%, #CB0404 100%) 0% 0% no-repeat padding-box;
+  transition: .3s all;
+}
+
+.section__reset form .error {
+  text-align: left;
+  font: normal normal 300 16px/22px AeroportLight;
+  letter-spacing: 0px;
+  color: #ff4848;
+}
+
+.section__reset form .input-error {
+  border: 1px solid #ff4848;
+}
+
+.section__reset form .input-error::placeholder {
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #ff4848;
+}
+
+@media (max-width: 768px) {
+  .section__reset {
+    width: 262px;
+    padding-bottom: 35px;
+  }
+
+  .section__reset h2 {
+    font: normal normal bold 20px/30px AeroportBold;
+  }
+
+  .section__reset p {
+    font: normal normal normal 16px/22px Aeroport400;
+  }
+
+  .section__reset form input {
+    font: normal normal normal 16px/38px Aeroport400;
+    height: 40px;
+  }
+
+  .section__reset form input::placeholder {
+    font: normal normal normal 16px/38px Aeroport400;
+  }
+
+  .section__reset form .submit {
+    height: 40px; 
+    font: normal normal normal 16px/38px Aeroport400;
+  }
+}

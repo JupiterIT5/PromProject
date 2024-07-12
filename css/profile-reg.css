@@ -1,0 +1,1558 @@
+@font-face {
+  font-family: "Aeroport400";
+  src: url(../fonts/Aeroport.ttf);
+}
+
+@font-face {
+  font-family: "Aeroport500";
+  src: url(../fonts/Aeroport-Medium.ttf);
+}
+
+@font-face {
+  font-family: "AeroportBold";
+  src: url(../fonts/Aeroport-Bold.ttf);
+}
+
+@font-face {
+  font-family: "AeroportLight";
+  src: url(../fonts/Aeroport-Light.ttf);
+}
+
+.nav {
+  width: 852px;
+  margin: 70px auto;
+}
+
+img {
+  user-select: none;
+}
+
+.section__data {
+  width: calc(100% - 88px);
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  padding: 0 44px;
+}
+
+.section__data .title {
+  padding-top: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.section__data .title div {
+  display: flex;
+  gap: 21px;
+  align-items: center;
+}
+
+.section__data .title div h3 {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.section__data .title div p {
+  font: normal normal 300 16px/22px AeroportLight;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+}
+
+.section__data .title div h3 .status {
+  font: normal normal normal 16px/22px Aeroport400;
+  letter-spacing: 0px;
+  color: #1aa248;
+}
+
+.section__data .title div h3 .btn-array {
+  width: 13px;
+  height: 13px;
+}
+
+.section__data .title div .status-btn {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.section__data .title div .status-menu {
+  width: 121px;
+  height: 78px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 35px #0000002e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  top: 27px;
+  left: 0;
+  padding: 12px 16px 14px 16px;
+  gap: 6px;
+  justify-content: center;
+  transform: translateY(-30px);
+  visibility: hidden;
+  transition: 0.3s all;
+  opacity: 0;
+}
+
+.section__data .title div .status-menu .status-list {
+  cursor: pointer;
+  font: normal normal normal 16px / 22px Aeroport400;
+  letter-spacing: 0px;
+}
+
+.section__data .title div .current-status .green {
+  color: #1aa248;
+}
+
+.section__data .title div .current-status .yellow {
+  color: #ffaa00;
+}
+
+.section__data .title div .current-status .red {
+  color: #ff4848;
+}
+
+.section__data .title div .status-btn .active {
+  transform: translateY(0);
+  visibility: inherit;
+  z-index: 9;
+  transition: 0.3s all;
+  opacity: 1;
+}
+
+.section__data .title h2 {
+  font: normal normal bold 30px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+}
+
+.section__data .title a {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #3881e0;
+  border-radius: 11px;
+  font: normal normal normal 16px/22px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+  width: 67px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__data .title a:hover {
+  background: #3881e0 0% 0% no-repeat padding-box;
+  color: #fff;
+  transition: 0.2s all;
+}
+
+.section__data .about {
+  display: flex;
+  gap: 30px;
+}
+
+.section__data .edit-avatar .avatar {
+  width: 130px;
+  height: 130px;
+  background: #eceff1 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+}
+
+.section__data .edit-avatar .edit {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.section__data .edit-avatar .edit div {
+  position: relative;
+}
+
+.section__data .edit-avatar .edit div input {
+  position: absolute;
+  top: 0;
+  width: 95px;
+  height: 22px;
+  opacity: 0;
+}
+
+.section__data .edit-avatar .edit div label {
+  font: normal normal normal 16px/22px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #3881e0;
+  border-radius: 11px;
+  display: block;
+  width: 95px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__data .edit-avatar .edit div:hover label {
+  background: #3881e0 0% 0% no-repeat padding-box;
+  transition: 0.3s all;
+  color: #fff;
+}
+
+.section__data .edit-avatar .edit .delete {
+  width: 22px;
+  height: 22px;
+  background: #ff4848 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+}
+
+.section__data .edit-avatar .edit .delete:hover svg circle {
+  fill: #df2020;
+  transition: 0.3s all;
+}
+
+.section__data .edit-about {
+  text-align: end;
+}
+
+.section__data .edit-about .user-about {
+  width: 560px;
+  height: 149px;
+  resize: none;
+  padding: 12px 19px 12px 19px;
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font: normal normal normal 18px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.section__data .edit-about .user-about::placeholder {
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.section__data .edit-about p {
+  font: normal normal 300 16px/22px AeroportLight;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+}
+
+.section__data .edit-about .user-about::-webkit-scrollbar {
+  width: 10px;
+}
+
+.section__data .edit-about .user-about::-webkit-scrollbar-track {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #eef6ff 0% 0% no-repeat padding-box;
+}
+
+.section__data .edit-about .user-about::-webkit-scrollbar-thumb {
+  background: #cfcfcf 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+}
+
+.section__data .tag {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.section__data .tag .section__search--tag-container {
+  display: flex;
+  gap: 14px;
+}
+
+.section__data .tag .section__search--tag-container .section__search--tag {
+  width: 74px;
+  height: 34px;
+  background: #d8e9ff 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  font: normal normal normal 18px/38px Aeroport500;
+  letter-spacing: 0px;
+  color: #3881e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.section__data
+  .tag
+  .section__search--tag-container
+  .section__search--tag:hover {
+  background: transparent linear-gradient(89deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  color: #fff;
+  transition: 0.3s all;
+}
+
+.section__data .tag .section__search--tag-container .active {
+  background: transparent linear-gradient(89deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  color: #fff;
+}
+
+.section__data .tag .help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__data .tag .help h2 {
+  font: normal normal 300 16px/22px AeroportLight;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+}
+
+.section__data .tag .help a {
+  text-decoration: underline;
+  font: normal normal 300 14px/38px AeroportLight;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+}
+
+.section__data .info {
+  display: flex;
+  gap: 50px;
+  margin-top: 38px;
+}
+
+.section__data .info div {
+  display: block;
+  width: 360px;
+}
+
+.section__data .info input,
+.section__data .info .country-btn,
+.section__data .info .sity-btn,
+.section__service .service--container .service .service-btn {
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  height: 51px;
+  width: 322px;
+  padding-left: 19px;
+  border: none;
+  outline: none;
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.section__data .info input::placeholder {
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.section__data .info .country-btn,
+.section__data .info .sity-btn {
+  width: 303px;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 19px;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.section__data .info .country-btn .btn-array,
+.section__data .info .sity-btn .btn-array,
+.section__data .info .country-btn .btn-array,
+.section__data .info .service-btn .btn-array {
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.section__data .info .country-btn .array__menu--country,
+.section__data .info .country-btn .array__menu--sity,
+.section__data .title div .status-btn h3 .array__menu--status {
+  transform: rotate(0);
+  transition: 0.3s linear;
+  width: 17px;
+  height: 17px;
+}
+
+.section__data .info .country-btn .active,
+.section__data .info .sity-btn .active,
+.section__data .title div .status-btn h3 .active {
+  transform: rotate(-180deg);
+  transition: 0.3s linear;
+  width: 17px;
+  height: 17px;
+}
+
+.section__data div .input-error {
+  border: 1px solid #ff4848;
+}
+
+.section__data div .input-error::placeholder {
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #ff4848;
+}
+
+.section__data .input-password {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.section__data .input-password img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-right: 20px;
+  top: 17px;
+}
+
+.section__data .error {
+  text-align: left;
+  font: normal normal 300 16px/22px AeroportLight;
+  letter-spacing: 0px;
+  color: #ff4848;
+}
+
+.section__data .info div .country-menu,
+.section__data .info div .sity-menu {
+  padding-right: 19px;
+  background: #f8faff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  height: 0;
+  opacity: 0;
+  padding-left: 19px;
+  border: none;
+  outline: none;
+  overflow-y: scroll;
+  padding-top: 15px;
+  transition: 0.4s all;
+  position: absolute;
+  width: 303px;
+  margin-top: -23px;
+  z-index: 9;
+}
+
+.section__data .info div .country-menu h4,
+.section__data .info div .sity-menu h4 {
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+  cursor: pointer;
+}
+
+.section__data .country-menu::-webkit-scrollbar,
+.section__data .sity-menu::-webkit-scrollbar,
+.section__data--mobile .country-menu::-webkit-scrollbar,
+.section__data--mobile .sity-menu::-webkit-scrollbar,
+.section__data--mobile .edit-about .user-about::-webkit-scrollbar {
+  width: 10px;
+}
+
+.section__data .country-menu::-webkit-scrollbar-track,
+.section__data .sity-menu::-webkit-scrollbar-track,
+.section__data--mobile .country-menu::-webkit-scrollbar-track,
+.section__data--mobile .sity-menu::-webkit-scrollbar-track,
+.section__data--mobile .edit-about .user-about::-webkit-scrollbar-track {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #f8faff 0% 0% no-repeat padding-box;
+}
+
+.section__data .country-menu::-webkit-scrollbar-thumb,
+.section__data .sity-menu::-webkit-scrollbar-thumb,
+.section__data--mobile .country-menu::-webkit-scrollbar-thumb,
+.section__data--mobile .sity-menu::-webkit-scrollbar-thumb,
+.section__data--mobile .edit-about .user-about::-webkit-scrollbar-thumb {
+  background: #cfcfcf 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+}
+
+.section__data .info div .active {
+  opacity: 1;
+  height: 153px;
+  transition: 0.4s all;
+}
+
+.section__data .info div .btn-error {
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border: 1px solid #ff4848;
+  color: #ff4848;
+}
+
+.section__service,
+.section__photo {
+  width: calc(100% - 88px);
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  padding: 0 44px 41px 41px;
+  margin-top: 30px;
+}
+
+.section__service .title,
+.section__photo .title {
+  padding-top: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 29px;
+}
+
+.section__service .title h2,
+.section__photo .title h2 {
+  font: normal normal bold 30px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+}
+
+.section__service .title span,
+.section__photo .title span {
+  font: normal normal normal 16px/22px Aeroport500;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+}
+
+.section__service .service--container .service {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.section__service .service--container .service input {
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+  border: none;
+  outline: none;
+  padding-left: 19px;
+}
+
+.section__service .service--container .service input::placeholder {
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.section__service .service--container .service .name-service {
+  width: 455px;
+  height: 51px;
+  margin-right: 10px;
+}
+
+.section__service .service--container .service .price-service {
+  width: 158px;
+  height: 51px;
+  margin-right: 10px;
+}
+
+.section__photo {
+  padding-left: 44px;
+}
+
+.section__photo .photo--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.section__photo .photo--container .photo {
+  width: 142px;
+  height: 142px;
+  background: #eceff1 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__photo .photo--container .photo .downloads {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #455a64 0% 0% no-repeat padding-box;
+}
+
+.section__btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 133px;
+}
+
+.section__btn .submit {
+  background: transparent linear-gradient(90deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 8px;
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #ffffff;
+  border: none;
+  width: 360px;
+  height: 51px;
+}
+
+.section__btn .submit:hover {
+  background: transparent linear-gradient(90deg, #ff4848 0%, #cb0404 100%) 0% 0%
+    no-repeat padding-box;
+  transition: 0.3s all;
+}
+
+.section__btn .cancel {
+  width: 360px;
+  height: 51px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #9a9a9a;
+  border-radius: 8px;
+  font: normal normal normal 20px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.section__btn .cancel:hover {
+  background: transparent linear-gradient(90deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  border-color: #00aaff;
+  color: #fff;
+  transition: 0.3s all;
+}
+
+.section__service .service--container .service-btn {
+  width: 134px;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 19px;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.section__data .info .country-btn,
+.section__data .info .sity-btn {
+  width: 303px;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 19px;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.section__data .info .country-btn .btn-array,
+.section__data .info .sity-btn .btn-array,
+.section__data .info .country-btn .btn-array,
+.section__data .info .service-btn .btn-array {
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.section__data .info .country-btn .array__menu--country,
+.section__data .info .country-btn .array__menu--sity {
+  transform: rotate(0);
+  transition: 0.3s linear;
+  width: 17px;
+  height: 17px;
+}
+
+.section__data .info .country-btn .active,
+.section__data .info .sity-btn .active {
+  transform: rotate(-180deg);
+  transition: 0.3s linear;
+  width: 17px;
+  height: 17px;
+}
+
+.section__data div .input-error {
+  border: 1px solid #ff4848;
+}
+
+.section__data div .input-error::placeholder {
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #ff4848;
+}
+
+.section__data .input-password {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.section__data .input-password img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+}
+
+.section__data .error {
+  text-align: left;
+  font: normal normal 300 16px/22px AeroportLight;
+  letter-spacing: 0px;
+  color: #ff4848;
+}
+
+.section__data--mobile {
+  width: calc(100% - 44px);
+  padding: 20px 22px;
+  height: auto;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: none;
+}
+
+.section__data--mobile .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.section__data--mobile .title h2 {
+  font: normal normal bold 22px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+}
+
+.section__data--mobile .title a {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #3881e0;
+  border-radius: 11px;
+  font: normal normal normal 16px/22px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+  width: 67px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__data--mobile .title a:hover {
+  background: #3881e0 0% 0% no-repeat padding-box;
+  color: #fff;
+  transition: 0.2s all;
+}
+
+.section__data--mobile .edit-avatar {
+  width: auto;
+  margin: 0 auto;
+}
+
+.section__data--mobile .edit-avatar .avatar {
+  width: 140px;
+  height: 140px;
+  background: #eceff1 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.section__data--mobile .edit-avatar .avatar img {
+  width: 140px;
+  height: 140px;
+}
+
+.section__data--mobile .edit-avatar .edit {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.section__data--mobile .edit-avatar div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  margin: 13px auto;
+  margin-bottom: 20px;
+}
+
+.section__data--mobile .edit-avatar div .edit {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section__data--mobile .edit-avatar div .edit input {
+  position: absolute;
+  top: 0;
+  width: 95px;
+  height: 22px;
+  opacity: 0;
+}
+
+.section__data--mobile .edit-avatar div .edit label {
+  font: normal normal normal 16px/22px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #3881e0;
+  border-radius: 11px;
+  display: block;
+  width: 95px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__data--mobile .edit-avatar div .edit:hover label {
+  background: #3881e0 0% 0% no-repeat padding-box;
+  color: #fff;
+  transition: 0.2s all;
+}
+
+.section__data--mobile .edit-avatar div svg {
+  width: 22px;
+  height: 22px;
+  background: #ff4848 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+}
+
+.section__data--mobile .edit-avatar div svg:hover circle {
+  fill: #df2020;
+}
+
+.section__data--mobile .status--container {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 38px;
+}
+
+.section__data--mobile .status--container h3 {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.section__data--mobile .status--container p {
+  font: normal normal 300 16px/22px AeroportLight;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+}
+
+.section__data--mobile .status--container .status-btn .current-status .status {
+  font: normal normal normal 16px/22px Aeroport400;
+  letter-spacing: 0px;
+  color: #1aa248;
+}
+
+.section__data--mobile .status--container .status-btn .btn-array {
+  width: 13px;
+  height: 13px;
+}
+
+.section__data--mobile .status--container .status-btn {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.section__data--mobile .status--container .status-btn .status-menu {
+  width: 121px;
+  height: 78px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 35px #0000002e;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  top: 27px;
+  left: 0;
+  padding: 12px 16px 14px 16px;
+  gap: 6px;
+  justify-content: center;
+  transform: translateY(-30px);
+  visibility: hidden;
+  transition: 0.3s all;
+  opacity: 0;
+}
+
+.section__data--mobile
+  .status--container
+  .status-btn
+  .status-menu
+  .status-list {
+  cursor: pointer;
+  font: normal normal normal 16px / 22px Aeroport400;
+  letter-spacing: 0px;
+}
+
+.section__data--mobile .status--container .status-btn .current-status .green {
+  color: #1aa248;
+}
+
+.section__data--mobile .status--container .status-btn .current-status .yellow {
+  color: #ffaa00;
+}
+
+.section__data--mobile .status--container .status-btn .current-status .red {
+  color: #ff4848;
+}
+
+.section__data--mobile .status--container .status-btn .active {
+  transform: translateY(0);
+  visibility: inherit;
+  z-index: 9;
+  transition: 0.3s all;
+  opacity: 1;
+}
+
+.section__data--mobile
+  .status--container
+  .status-btn
+  .current-status
+  .array__menu--status {
+  transform: rotate(0);
+  transition: 0.3s linear;
+  width: 17px;
+  height: 17px;
+}
+
+.section__data--mobile .status--container .status-btn .current-status .active {
+  transform: rotate(-180deg);
+  transition: 0.3s linear;
+  width: 17px;
+  height: 17px;
+}
+
+.section__data--mobile .tag {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section__data--mobile .tag .section__search--tag-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section__data--mobile
+  .tag
+  .section__search--tag-container
+  .section__search--tag {
+  width: 74px;
+  height: 34px;
+  background: #d8e9ff 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  font: normal normal normal 18px/38px Aeroport500;
+  letter-spacing: 0px;
+  color: #3881e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.section__data--mobile
+  .tag
+  .section__search--tag-container
+  .section__search--tag:hover {
+  background: transparent linear-gradient(89deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  color: #fff;
+  transition: 0.3s all;
+}
+
+.section__data--mobile .tag .section__search--tag-container .active {
+  background: transparent linear-gradient(89deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  color: #fff;
+}
+
+.section__data--mobile .tag .help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 12px;
+}
+
+.section__data--mobile .tag .help h2 {
+  font: normal normal 300 16px/22px AeroportLight;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+}
+
+.section__data--mobile .tag .help a {
+  text-decoration: underline;
+  font: normal normal 300 14px/38px AeroportLight;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+}
+
+.section__data--mobile .edit-about .user-about {
+  width: calc(100% - 18px);
+  height: 135px;
+  overflow-y: auto;
+  padding: 9px 12px;
+  background: #f9f9f9 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  font: normal normal normal 16px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+  resize: none;
+  border: none;
+  outline: none;
+  margin-top: 50px;
+}
+
+.section__data--mobile .edit-about .user-about::placeholder {
+  font: normal normal normal 16px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.section__data--mobile .edit-about p {
+  font: normal normal 300 14px/19px AeroportLight;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+  margin-top: 4px;
+  text-align: end;
+}
+
+.section__data--mobile .info {
+  display: flex;
+  margin-top: 27px;
+  flex-direction: column;
+}
+
+.section__data--mobile .info div {
+  display: block;
+  width: 100%;
+}
+
+.section__data--mobile .info input,
+.section__data--mobile .info .country-btn,
+.section__data--mobile .info .sity-btn {
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  height: 40px;
+  width: calc(100% - 19px);
+  padding-left: 19px;
+  border: none;
+  outline: none;
+  font: normal normal normal 16px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.section__data--mobile .info input::placeholder {
+  font: normal normal normal 16px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+}
+
+.section__data--mobile .info .country-btn,
+.section__data--mobile .info .sity-btn {
+  width: calc(100% - 38px);
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 19px;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.section__data--mobile .info .country-btn .btn-array,
+.section__data--mobile .info .sity-btn .btn-array,
+.section__data--mobile .info .country-btn .btn-array,
+.section__data--mobile .info .service-btn .btn-array {
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.section__data--mobile .info .country-btn .array__menu--country,
+.section__data--mobile .info .country-btn .array__menu--sity,
+.section__data--mobile .title div .status-btn h3 .array__menu--status {
+  transform: rotate(0);
+  transition: 0.3s linear;
+  width: 17px;
+  height: 17px;
+}
+
+.section__data--mobile .info .country-btn .active,
+.section__data--mobile .info .sity-btn .active,
+.section__data--mobile .title div .status-btn h3 .active {
+  transform: rotate(-180deg);
+  transition: 0.3s linear;
+  width: 17px;
+  height: 17px;
+}
+
+.section__data--mobile div .input-error {
+  border: 1px solid #ff4848;
+}
+
+.section__data--mobile div .input-error::placeholder {
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #ff4848;
+}
+
+.section__data--mobile .input-password {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.section__data--mobile .input-password img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+.section__data--mobile .error {
+  text-align: left;
+  font: normal normal 300 16px/22px AeroportLight;
+  letter-spacing: 0px;
+  color: #ff4848;
+}
+
+.section__data--mobile .info div .country-menu,
+.section__data--mobile .info div .sity-menu {
+  padding-right: 19px;
+  background: #f8faff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  height: 0;
+  opacity: 0;
+  padding-left: 19px;
+  border: none;
+  outline: none;
+  overflow-y: scroll;
+  padding-top: 15px;
+  transition: 0.4s all;
+  position: absolute;
+  width: calc(303px - 19px);
+  margin-top: -23px;
+  z-index: 9;
+}
+
+.section__data--mobile .info div .country-menu {
+  z-index: 10;
+}
+
+.section__data--mobile .info div .country-menu h4,
+.section__data--mobile .info div .sity-menu h4 {
+  font: normal normal normal 16px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+  cursor: pointer;
+}
+
+.section__data--mobile .info div .active {
+  opacity: 1;
+  height: 153px;
+  transition: 0.4s all;
+}
+
+.section__data--mobile .info div .btn-error {
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border: 1px solid #ff4848;
+  color: #ff4848;
+}
+
+.section__service .service--container .service .service-btn {
+  width: 134px;
+}
+
+.section__service .service--container .service .service-menu {
+  padding-right: 19px;
+  background: #f8faff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  height: 0;
+  opacity: 0;
+  padding-left: 19px;
+  border: none;
+  outline: none;
+  overflow-y: scroll;
+  padding-top: 15px;
+  transition: 0.4s all;
+  position: absolute;
+  width: 115px;
+  margin-top: 5px;
+  z-index: 9;
+  right: 0;
+  top: 58px;
+}
+
+.section__service .service--container .service .service-menu h4 {
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+  cursor: pointer;
+}
+
+.section__service
+  .service--container
+  .service
+  .service-menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+.section__service
+  .service--container
+  .service
+  .service-menu::-webkit-scrollbar-track {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #f8faff 0% 0% no-repeat padding-box;
+}
+
+.section__service
+  .service--container
+  .service
+  .service-menu::-webkit-scrollbar-thumb {
+  background: #cfcfcf 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+}
+
+.section__service .service--container .service .service-btn .btn-array {
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.section__service
+  .service--container
+  .service
+  .service-btn
+  .array__menu--service {
+  transform: rotate(0);
+  transition: 0.3s linear;
+  width: 17px;
+  height: 17px;
+}
+
+.section__service .service--container .service .service-btn .active {
+  transform: rotate(-180deg);
+  transition: 0.3s linear;
+  width: 17px;
+  height: 17px;
+}
+
+.section__service .service--container .service .active {
+  opacity: 1;
+  height: 153px;
+  transition: 0.4s all;
+}
+
+@media (max-width: 1073px) {
+  .nav {
+    width: 668px;
+  }
+
+  .section__data {
+    padding: 0 30px;
+    width: calc(100% - 60px);
+  }
+
+  .section__data .title {
+    margin-bottom: 31px;
+  }
+
+  .section__data .title div h2 {
+    font: normal normal bold 22px/30px AeroportBold;
+  }
+
+  .section__data .title div .status-btn .current-status .status,
+  .section__data .title div .status-btn .status-menu .status-list {
+    font: normal normal normal 14px/19px Aeroport400;
+  }
+
+  .section__data .title div .status-btn .current-status .btn-array {
+    width: 13px;
+    height: 13px;
+  }
+
+  .section__data .title div .status-btn .current-status .array__menu--status {
+    width: 13px;
+    height: 13px;
+  }
+
+  .section__data .title div p {
+    font: normal normal 300 14px/19px AeroportLight;
+  }
+
+  .section__data .about .edit-about .user-about {
+    width: 414px;
+    height: 151px;
+    font: normal normal normal 16px/38px Aeroport400;
+  }
+
+  .section__data .about .edit-about .user-about::placeholder {
+    font: normal normal normal 16px/38px Aeroport400;
+  }
+
+  .section__data .about .edit-about p {
+    font: normal normal 300 14px/19px AeroportLight;
+  }
+
+  .section__data .tag .help {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 8px;
+  }
+
+  .section__data .info {
+    margin-top: 28px;
+    gap: 16px;
+  }
+
+  .section__data .info div {
+    width: 296px;
+  }
+
+  .section__data .info div input,
+  .section__data .info div .input-error {
+    width: 277px;
+    height: 40px;
+    font: normal normal normal 16px/38px Aeroport400;
+  }
+
+  .section__data .info div input::placeholder,
+  .section__data .info div .input-error::placeholder {
+    font: normal normal normal 16px/38px Aeroport400;
+  }
+
+  .section__data .info div .country-btn,
+  .section__data .info div .sity-btn {
+    width: 258px;
+    height: 40px;
+  }
+
+  .section__data .info div .country-menu,
+  .section__data .info div .sity-menu {
+    width: 258px;
+  }
+
+  .section__data .info div .input-password img {
+    top: calc(50% - 20px);
+    margin-right: 0px;
+  }
+
+  .section__service {
+    width: calc(100% - 60px);
+    padding: 0 30px;
+    padding-bottom: 41px;
+  }
+
+  .section__service .title h2 {
+    font: normal normal bold 22px/30px AeroportBold;
+  }
+
+  .section__service .title span {
+    font: normal normal 300 14px/19px AeroportLight;
+  }
+
+  .section__service .service--container .service {
+    margin-bottom: 15px;
+  }
+
+  .section__service .service--container .service input,
+  .section__service .service .service-btn {
+    font: normal normal normal 16px/38px Aeroport400;
+  }
+
+  .section__service .service--container .service .name-service {
+    width: 301px;
+    height: 40px;
+  }
+
+  .section__service .service--container .service .price-service {
+    width: 115px;
+    height: 40px;
+  }
+
+  .section__service .service--container .service .service-btn {
+    width: 134px;
+    height: 40px;
+  }
+
+  .section__service .service--container .service .service-menu {
+    margin-top: -10px;
+  }
+
+  .section__photo .title h2 {
+    font: normal normal bold 22px/30px AeroportBold;
+  }
+
+  .section__photo .title span {
+    font: normal normal 300 14px/19px AeroportLight;
+  }
+
+  .section__photo .photo--container {
+    gap: 12px;
+  }
+
+  .section__photo .photo--container .photo {
+    width: 111px;
+    height: 111px;
+  }
+
+  .section__btn {
+    margin-top: 30px;
+  }
+
+  .section__btn .submit,
+  .section__btn .cancel {
+    width: 296px;
+    height: 40px;
+    font: normal normal normal 16px/38px Aeroport400;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    margin: 21px auto;
+    width: 91.7%;
+  }
+
+  .section__data {
+    display: none;
+  }
+
+  .section__data--mobile {
+    display: block;
+  }
+
+  .section__photo {
+    width: calc(100% - 44px);
+    height: auto;
+    padding: 20px 22px 40px 22px;
+  }
+
+  .section__photo .title {
+    flex-direction: column;
+    align-items: start;
+    padding-top: 0;
+  }
+
+  .section__photo .photo--container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .section__service {
+    padding: 0 22px;
+    width: calc(100% - 44px);
+  }
+}
+
+@media (max-width: 667px) {
+  .section__service .title {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+
+  .section__service .service--container .service {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .section__service .service--container .service .name-service {
+    width: 100%;
+  }
+
+  .section__service .service--container .service .price-service {
+    width: calc(50% - 10px - 19px);
+    margin-right: 0;
+  }
+
+  .section__service .service--container .service .service-btn {
+    width: calc(50% - 10px - 24px);
+    padding: 0 12px;
+  }
+
+  .section__service .service--container .service .service-menu {
+    margin-top: 35px;
+    right: 9px;
+  }
+
+  .section__service .service--container .service .service-btn {
+    line-height: 18px;
+  }
+
+  .section__btn {
+    gap: 10px;
+  }
+
+  .section__btn .submit,
+  .section__btn .cancel {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .section__photo .photo--container .photo {
+    width: 64px;
+    height: 64px;
+  }
+
+  .section__photo .photo--container .photo svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .section__service {
+    padding: 0 22px 41px 22px;
+    width: calc(100% - 44px);
+  }
+
+  .section__data--mobile .info div .sity-menu,
+  .section__data--mobile .info div .country-menu {
+    width: 200px;
+  }
+
+  .section__service .service--container .service .service-menu {
+    width: 95px;
+  }
+}

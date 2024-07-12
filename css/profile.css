@@ -1,0 +1,824 @@
+@font-face {
+  font-family: "Aeroport400";
+  src: url(../fonts/Aeroport.ttf);
+}
+
+@font-face {
+  font-family: "Aeroport500";
+  src: url(../fonts/Aeroport-Medium.ttf);
+}
+
+@font-face {
+  font-family: "AeroportBold";
+  src: url(../fonts/Aeroport-Bold.ttf);
+}
+
+@font-face {
+  font-family: "AeroportLight";
+  src: url(../fonts/Aeroport-Light.ttf);
+}
+
+img {
+  user-select: none;
+}
+
+.nav {
+  display: grid;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  grid-template-columns: 955px 558px;
+}
+
+.section__profile {
+  width: 870px;
+  height: 701px;
+  padding: 40px 45px 40px 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  margin: 70px 0;
+  margin-bottom: 0;
+}
+
+.section__profile .info {
+  display: flex;
+  gap: 40px;
+}
+
+.section__profile .info .avatar {
+  border-radius: 12px;
+  width: 184px;
+  height: 184px;
+}
+
+.section__profile .info .avatar img {
+  border-radius: 12px;
+  width: 184px;
+  height: 184px;
+}
+
+.info__text {
+  width: 100%;
+}
+
+.section__profile .info .info__text h3 {
+  font: normal normal normal 16px/22px Aeroport500;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__profile .info .info__text h1 {
+  font: normal normal bold 30px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-bottom: 5px;
+}
+
+.section__profile .info .info__text p {
+  font: normal normal normal 16px/22px Aeroport400;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+  margin-bottom: 15px;
+}
+
+.section__profile .info .info__text .grade {
+  display: flex;
+  width: 184px;
+  height: 40px;
+  background: #e9e9e9 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 32px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.section__profile .info .info__text .grade div {
+  display: flex;
+  align-items: center;
+}
+
+.section__profile .info .info__text .grade .star {
+  width: 12px;
+  height: 12px;
+  padding-left: 14px;
+}
+
+.section__profile .info .info__text .grade h2 {
+  font: normal normal bold 22px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+}
+
+.section__profile .info .info__text .grade p {
+  font: normal normal normal 16px/24px Aeroport400;
+  letter-spacing: 0px;
+  color: #252525;
+  margin: 0;
+  padding-right: 14px;
+}
+
+.section__profile .info .info__text .contact {
+  display: flex;
+  gap: 40px;
+}
+
+.section__profile .info .info__text .contact a {
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  font: normal normal normal 18px/25px Aeroport500;
+  letter-spacing: 0px;
+  color: #3881e0;
+  fill: #3881e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__profile .info .info__text .contact .phone {
+  width: 184px;
+  height: 40px;
+}
+
+.section__profile .info .info__text .contact .phone:hover {
+  background: transparent linear-gradient(90deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  color: #fff;
+  transition: 0.3s all;
+}
+
+.section__profile .info .info__text .contact .icon {
+  display: flex;
+  gap: 8px;
+}
+
+.section__profile .info .info__text .contact .icon a:hover {
+  background: transparent linear-gradient(90deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  transition: 0.3s all;
+}
+
+.section__profile .info .info__text .contact .icon a:hover svg path {
+  fill: #fff;
+  transition: 0.3s all;
+}
+
+.section__profile .about p {
+  font: normal normal normal 18px/26px Aeroport400;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-top: 24px;
+}
+
+.section__profile .info--mobile {
+  width: 100%;
+  display: none;
+}
+
+.section__profile .info--mobile .user__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+  margin-bottom: 12px;
+}
+
+.section__profile .info--mobile .avatar,
+.section__profile .info--mobile .avatar img {
+  width: 83px;
+  height: 83px;
+}
+
+.section__profile .info--mobile .info__text h1 {
+  font: normal normal bold 18px/22px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-bottom: 3px;
+}
+
+.section__profile .info--mobile .info__text h3 {
+  font: normal normal normal 14px/19px Aeroport500;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__profile .info--mobile .info__text span {
+  color: #1aa248;
+}
+
+.section__profile .info--mobile .grade {
+  height: 40px;
+  background: #e9e9e9 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 15px;
+}
+
+.section__profile .info--mobile .grade div {
+  display: flex;
+  align-items: center;
+}
+
+.section__profile .info--mobile .grade div img {
+  width: 17px;
+  height: 16px;
+}
+
+.section__profile .info--mobile .grade div h2 {
+  font: normal normal bold 22px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+}
+
+.section__profile .info--mobile .grade p {
+  font: normal normal normal 16px/24px Aeroport400;
+  letter-spacing: 0px;
+  color: #252525;
+}
+
+.section__profile .info--mobile .contact .phone {
+  height: 40px;
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  width: 100%;
+  font: normal normal normal 16px/22px Aeroport500;
+  letter-spacing: 0px;
+  color: #3881e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.section__profile .info--mobile .contact .phone:hover {
+  background: transparent linear-gradient(90deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  color: #fff;
+  transition: 0.3s all;
+}
+
+.section__profile .info--mobile .contact .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.section__profile .info--mobile .contact .icon a {
+  width: 40px;
+  height: 40px;
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+}
+
+.section__profile .info--mobile .contact .icon a svg {
+  width: 40px;
+  height: 40px;
+}
+
+.section__profile .info--mobile .contact .icon a:hover {
+  background: transparent linear-gradient(90deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  transition: 0.3s all;
+}
+
+.section__profile .info--mobile .contact .icon a:hover svg path {
+  fill: #fff;
+  transition: 0.3s all;
+}
+
+.section__service {
+  width: 478px;
+  height: 713px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  margin: 70px 0;
+  padding: 27px 40px;
+  padding-bottom: 40px;
+  margin-bottom: 0;
+}
+
+.section__service .title {
+  font: normal normal bold 26px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-bottom: 17px;
+}
+
+.section__service .service__container table tr td {
+  border-bottom: 1px solid #707070;
+  padding: 2px 0;
+}
+
+.section__service .service__container table tr:first-child td {
+  padding-top: 0;
+}
+
+.section__service .service__container table tr:last-child td {
+  padding-bottom: 0;
+}
+
+.section__service .service__container table tr td:first-child {
+  font: normal normal normal 18px/30px Aeroport400;
+  letter-spacing: 0px;
+  color: #252525;
+  width: 70%;
+  text-align: start;
+}
+
+.section__service .service__container table tr td:last-child {
+  font: normal normal bold 18px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+  width: 30%;
+  text-align: end;
+}
+
+.section__service .project {
+  position: relative;
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.section__service .project img {
+  width: 113px;
+  height: 113px;
+  border-radius: 8px;
+}
+
+.section__service .project::-webkit-scrollbar {
+  width: 10px;
+}
+
+.section__service .project::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.section__service .project::-webkit-scrollbar-thumb {
+  background: transparent;
+  width: 10px;
+}
+
+.section__service .project .arrow {
+  position: absolute;
+  top: calc(50% - 22px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.section__service .project .arrow svg {
+  margin-top: -15px;
+}
+
+.section__service .project .arrow svg circle {
+  box-shadow: 0px 0px 13px #00000029;
+}
+
+.section__service .project .arrow-right {
+  right: 0;
+  rotate: 0deg;
+  margin-right: -20px;
+}
+
+.section__service .project .arrow-left {
+  left: 0;
+  rotate: -180deg;
+  margin-left: -20px;
+}
+
+.section__review {
+  width: 870px;
+  height: auto;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  padding: 29px 40px;
+  padding-bottom: 40px;
+}
+
+.section__review .title {
+  font: normal normal bold 26px/30px AeroportBold;
+  letter-spacing: 0px;
+  color: #252525;
+  margin-bottom: 20px;
+}
+
+.section__review .send_review {
+  border: 2px solid #d8e9ff;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  width: 800px;
+  margin-bottom: 31px;
+}
+
+.section__review .send_review h2 {
+  font: normal normal normal 22px/26px Aeroport500;
+  letter-spacing: 0px;
+  color: #252525;
+}
+
+.section__review .send_review a {
+  width: 241px;
+  height: 51px;
+  background: #eef6ff 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  font: normal normal normal 18px/38px Aeroport400;
+  letter-spacing: 0px;
+  color: #3881e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section__review .send_review a:hover {
+  background: transparent linear-gradient(90deg, #00aaff 0%, #3271fe 100%) 0% 0%
+    no-repeat padding-box;
+  color: #fff;
+  transition: 0.3s all;
+}
+
+.section__review .review__container .review {
+  border-bottom: 1px solid #707070;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.section__review .review__container .review:first-child {
+  padding-top: 0;
+}
+
+.section__review .review__container .review:last-child {
+  padding-bottom: 0;
+  border: none;
+}
+
+.section__review .review__container .review .info {
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.section__review .review__container .review .info .avatar,
+.section__review .review__container .review .info .avatar img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+.section__review .review__container .review .info .info__text div {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.section__review .review__container .review .info .info__text .name a {
+  font: normal normal bold 22px/30px AeroportBold;
+  letter-spacing: 0px;
+  margin-bottom: 4px;
+  color: #252525;
+}
+
+.section__review .review__container .review .info .info__text .name:hover a {
+  color: #3881e0;
+  transition: 0.3s all;
+}
+
+.section__review .review__container .review .info .info__text div .star {
+  display: flex;
+  gap: 4px;
+}
+
+.section__review .review__container .review .info .info__text div h2 {
+  font: normal normal normal 16px/22px Aeroport500;
+  letter-spacing: 0px;
+  color: #9a9a9a;
+}
+
+.section__review .review__container .review .about p {
+  font: normal normal normal 18px/26px Aeroport400;
+  letter-spacing: 0px;
+  color: #252525;
+}
+
+.section__review .review__container .review .red-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 7px
+}
+
+.section__review .review__container .review .red-menu .btn-red a {
+  width: 134px;
+height: 22px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #3881E0;
+border-radius: 11px;
+font: normal normal normal 16px/22px Aeroport400;
+letter-spacing: 0px;
+color: #3881E0;
+padding: 0 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.section__review .review__container .review .red-menu .btn-red a:hover {
+  color: #fff;
+  background: #3881E0 0% 0% no-repeat padding-box;
+border: 1px solid #3881E0;
+transition: .3s all;
+}
+
+.section__review .review__container .review .red-menu svg {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.section__review .review__container .review .red-menu svg:hover circle {
+  fill: #DF2020;
+  transition: .3s all;
+}
+
+@media (max-width: 1559px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0;
+    align-items: center;
+  }
+
+  .section__profile {
+    width: calc(79.2% - 60px);
+    margin-top: -34px;
+    margin-bottom: 0;
+    padding: 25px 30px;
+    height: auto;
+    min-width: 668px;
+  }
+  .section__service {
+    width: calc(79.2% - 60px);
+    min-width: 668px;
+    height: auto;
+    margin: 0;
+    padding: 25px 30px;
+  }
+
+  .section__review {
+    width: calc(79.2% - 60px);
+    min-width: 668px;
+    margin: 0;
+    padding: 25px 30px;
+  }
+
+  .section__service .project {
+    gap: 16px;
+    padding: 0;
+    max-width: 624px;
+    margin: 72px auto;
+    margin-bottom: 0;
+  }
+
+  .section__service .project img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .section__review .send_review {
+    width: calc(100% - 60px);
+  }
+
+  .stub {
+    display: none;
+  }
+
+  .section__service .service__container table tr td {
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 875px) {
+  .section__profile .info .info__text h3 {
+    font-size: 14px;
+  }
+
+  .section__profile .info .info__text h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .section__profile .info .info__text h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .section__profile .info .info__text .contact .phone {
+    width: 184px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .section__profile .about p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .section__service .title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .section__service .service__container table tr td:first-child {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .section__service .service__container table tr td:last-child {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .section__review .title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .section__review .send_review h2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .section__review .send_review a {
+    width: 197px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 760px) {
+  .nav {
+    width: 91.7%;
+    margin: 20px auto;
+  }
+
+  .section__profile,
+  .section__review,
+  .section__service {
+    width: calc(100% - 44px);
+    padding: 40px 22px;
+    height: auto;
+    min-width: 0;
+  }
+
+  .section__profile .info {
+    display: none;
+  }
+
+  .section__profile .info--mobile {
+    display: block;
+  }
+
+  .section__review .review__container .review .red-menu {
+    position: relative;
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+  .section__review .send_review {
+    width: calc(100% - 40px);
+    padding: 19px 20px 24px 20px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 18px;
+  }
+
+  .section__review .send_review h2 {
+    line-height: 22px;
+  }
+
+  .section__review .review__container .review .info .info__text .name {
+    font: normal normal bold 20px/30px AeroportBold;
+  }
+
+  .section__review .review__container .review .info .info__text div .star img {
+    width: 21px;
+    height: 21px;
+  }
+
+  .section__review .review__container .review .info .info__text div h2 {
+    font: normal normal normal 16px/22px Aeroport500;
+  }
+}
+
+@media (max-width: 483px) {
+  .section__service .service__container table tr td:last-child,
+  .section__service .service__container table tr td:first-child {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .section__service .project img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .section__service .project .arrow svg circle {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 450px) {
+  .section__profile {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .section__review .review__container .review .info .info__text .name {
+    font: normal normal bold 18px/20px AeroportBold;
+  }
+
+  .section__review .review__container .review .info .info__text div .star img {
+    width: 17px;
+    height: 17px;
+  }
+
+  .section__review .review__container .review .info .info__text div h2 {
+    font: normal normal normal 14px/19px Aeroport500;
+  }
+
+  .section__review .review__container .review .about p {
+    text-align: left;
+    font: normal normal normal 16px/22px Aeroport400;
+  }
+}
+
+@media (max-width: 370px) {
+  .section__review .review__container .review .info .info__text .name {
+    font: normal normal bold 14px/18px AeroportBold;
+  }
+
+  .section__review .review__container .review .info .info__text div .star img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .section__review .review__container .review .info .info__text div h2 {
+    font: normal normal normal 12px/15px Aeroport500;
+  }
+
+  .section__review .review__container .review .about p {
+    text-align: left;
+    font: normal normal normal 14px/18px Aeroport400;
+  }
+
+  .section__review .review__container .review .info .info__text div {
+    gap: 10px
+  }
+}
+
+@media (max-width: 360px) {
+  .section__profile .info--mobile .info__text h1 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .section__profile .info--mobile .info__text h3 {
+    font-size: 12px;
+  }
+}
